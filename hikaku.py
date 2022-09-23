@@ -1,9 +1,7 @@
-l = [1,1,1,1,1,1,1,1,1,1] 
-k = [1,1,1,1,1,0,1,0,1,0] 
-s = [] 
+def hikaku(l,k):
+    rate = 0
 
-for (i,j) in zip(l,k): 
-    if i == j: 
-        s.append(10) 
-
-print(str(sum(s)) + "%")
+    for (i,j) in zip(l,k):
+        if i == j:
+            rate += 10
+    return(str(rate) + "%")
